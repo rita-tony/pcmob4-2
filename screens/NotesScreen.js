@@ -57,7 +57,6 @@ export default function NotesScreen({ navigation, route }) {
         details: route.params.detailsNote,
         done: false,
         createdDateTime: firebase.firestore.FieldValue.serverTimestamp(),
-        //Date.now().toString(),
       };
       db.add(newNote);
       //the firebase snapshot function will be fire whenever there is a new record or change in the newNote. 
